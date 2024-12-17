@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: #f8f9fa; /* Light gray background */
+    border-bottom: 1px solid #e0e0e0; /* Subtle bottom border */
+    padding: 10px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header i {
+    color: #4CAF50; /* Green for icons */
+    margin-right: 5px;
+}
+
+.header select, 
+.header div {
+    margin-left: 10px;
+    font-size: 0.9rem;
+    color: #333; /* Dark gray text */
+}
+
+/* Navbar */
+.navbar .container {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.categories {
+    background-color: #E91E63; /* Pink background */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.categories:hover {
+    background-color: #d81b60; /* Slightly darker pink on hover */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    width: 50%;
+}
+
+.search-bar input {
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ced4da;
+    padding: 8px;
+    outline: none;
+}
+
+.search-bar button {
+    border-radius: 0 5px 5px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #45a049; /* Slightly darker green */
+}
+
+/* Action Buttons */
+.action-buttons button {
+    margin-left: 10px;
+    background-color: #333; /* Dark gray buttons */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons button:hover {
+    background-color: #555; /* Lighter gray on hover */
+}
+
+/* Shopping Cart and Contact */
+.cart-info, 
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cart-info i, 
+.contact i {
+    font-size: 1.5rem;
+    color: #4CAF50; /* Green icons */
+}
+
+.cart-info span, 
+.contact span {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb-container {
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: #555; /* Medium gray text */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .header .container,
+    .navbar .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .categories {
+        margin-top: 10px;
+    }
+
+    .action-buttons {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .logo img {
+        height: 30px; /* Smaller logo for mobile */
+    }
+
+    .categories, 
+    .cart-info, 
+    .contact {
+        font-size: 0.8rem; /* Smaller font size for compact layout */
+    }
+
+    .action-buttons button {
+        padding: 6px 8px;
+    }
+}

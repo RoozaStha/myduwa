@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+   <!-- Header -->
+<header class="header">
+    
+    <div class="container ms-5 ps-5">
+        <!-- Left Section -->
+        <div class="header-left">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>We deliver within Nairobi and across Kenya</span>
+        </div>
+
+        <!-- Right Section -->
+        <div class="header-right">
+            <select class="language-dropdown">
+                <option>Eng</option>
+            </select>
+            <select class="currency-dropdown">
+                <option>USD</option>
+            </select>
+            <span class="signin">Sign In / Sign Up</span>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-light ms-5 ps-5">
+        <div class="container-fluid">
+            <!-- Logo Section -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo.png" alt="myDAWA Logo" style="height: 100px;">
+            </a>
+
+            <!-- Toggle Button for Small Screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- Search Bar -->
+                <form class="d-flex mx-auto my-2 my-lg-0 w-50">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+
+                <!-- Icons Section -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+                    <li class="nav-item me-3">
+                        <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a href="#" class="nav-link"><i class="far fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <i class="fas fa-shopping-bag me-1 text-success"></i>
+                            <span class="fw-bold">KES 2,000</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="navbar ms-5 ps-5">
+        <div class="all-categories">
+            <div class="menu-icon">
+                <span>&#9776;</span>
+            </div>
+            <div class="categories-text">All Categories &#9662;</div>
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">My Health Centre</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <div class="nav-buttons">
+            <button class="submit-btn">Submit a prescription</button>
+            <button class="book-btn">Book a consultation</button>
+        </div>
+        <div class="contact">
+            <span>&#9742;</span>
+            <span>+254 20521 9999</span>
+        </div>
+    </div>
+</header>
+
+
+    <!-- Shopping Cart -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">My Shopping Cart</h2>
+            <div class="row">
+                <!-- Cart Items -->
+                <div class="col-md-8">
+                    <div class="card p-3 mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <img src="https://via.placeholder.com/100" alt="Product" class="me-3">
+                                <div>
+                                    <h5>Berocca Performance Effervescent Tablets 10's</h5>
+                                    <p class="mb-0">KES 2,640</p>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="number" value="1" class="form-control text-center" style="width: 60px;">
+                            </div>
+                            <p class="mb-0 fw-bold">KES 2,640</p>
+                            <button class="btn btn-outline-danger btn-sm"><i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="card p-3 mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <img src="https://via.placeholder.com/100" alt="Product" class="me-3">
+                                <div>
+                                    <h5>Biogaia Gastrus Tablets 30's</h5>
+                                    <p class="mb-0 text-decoration-line-through">KES 3,640</p>
+                                    <p class="mb-0">KES 2,640</p>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="number" value="1" class="form-control text-center" style="width: 60px;">
+                            </div>
+                            <p class="mb-0 fw-bold">KES 2,640</p>
+                            <button class="btn btn-outline-danger btn-sm"><i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <button class="btn btn-secondary">Continue Shopping</button>
+                        <button class="btn btn-danger">Clear Cart</button>
+                    </div>
+                </div>
+
+                <!-- Cart Total -->
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h4 class="fw-bold">Cart Total</h4>
+                        <ul class="list-unstyled">
+                            <li class="d-flex justify-content-between">
+                                <span>Subtotal:</span>
+                                <span>KES 5,640</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <span>Shipping:</span>
+                                <span>0</span>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex justify-content-between fw-bold">
+                            <span>Total:</span>
+                            <span>KES 5,640</span>
+                        </div>
+                        <button class="btn btn-success w-100 mt-3">Proceed to Checkout</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Coupon Section -->
+            <div class="mt-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <input type="text" placeholder="Enter coupon code" class="form-control d-inline-block w-50">
+                        <button class="btn btn-dark ms-2">Apply Coupon</button>
+                    </div>
+                    <div>
+                        <label for="loyalty" class="form-label">Loyalty Points:</label>
+                        <input type="checkbox" id="loyalty" class="form-check-input">
+                        <span>Balance: KES 2,500</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <h5>myDAWA</h5>
+                <p>We deliver care.</p>
+            </div>
+            <div>
+                <h6>Subscribe to our Newsletter</h6>
+                <input type="email" placeholder="Your email address" class="form-control d-inline-block w-50">
+                <button class="btn btn-primary ms-2">Subscribe</button>
+            </div>
+            <div>
+                <h6>Download Our App</h6>
+                <div>
+                    <button class="btn btn-dark me-2"><i class="fab fa-apple"></i> App Store</button>
+                    <button class="btn btn-dark"><i class="fab fa-google-play"></i> Google Play</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
